@@ -1,4 +1,82 @@
-#upload-btn {
+body {
+    font-family: Arial;
+    line-height: 25px;
+}
+
+.content-categories {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*#content-categories {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}*/
+
+#music {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+#creative-painting {
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+#photography {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 40px;
+    margin: 20px 20px 10px 20px; 
+}
+
+i {
+    text-align: center;
+    font-size: 60px;
+    /*color: #062a4d;*/
+    color: #fff;
+    padding-top: 20px;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+}
+
+.content-desc {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    color: #fff;
+}
+
+button {
+    width: 25%;
+    height: 40px;
+    margin-bottom: 20px;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 28%;
+}
+
+/*style copied from original upload.css*/
+/****Start****/
+.upload-btn {
     width: 150px;
     height: 50px;
     font-size: 15px;
@@ -85,5 +163,17 @@
 @media screen and (max-width: 800px) {
     #content-desc {
         width: 80%;
+    }
+}
+/****End****/
+
+@media screen and (min-width: 800px) {
+    .content-categories {
+        flex-direction: row;
+    }
+
+    .category {
+        margin: 20px 5px 10px 5px;
+        height: 60%;
     }
 }

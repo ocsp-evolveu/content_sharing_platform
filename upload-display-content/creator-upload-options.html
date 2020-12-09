@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Uploadport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/creator-upload-options.css">
+    <script src="https://kit.fontawesome.com/babaf47f2f.js"></script>
+    <title>Creator Upload Options</title>
+</head>
+<body>
+
+    <div class="content-categories">
+        <div class="category" id="music">
+            <i class="fas fa-music"></i>
+            <p class="content-title">Music</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl. 
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu. 
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit.
+            </p>
+            <br>
+            <button class="upload-btn" type="button" name="submit">Upload</button>
+        </div>
+
+        <div class="category" id="creative-painting">
+            <i class="fas fa-paint-brush"></i>
+            <p class="content-title">Creative Painting</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl. 
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu. 
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit.
+            </p>
+            <br>
+            <button class="upload-btn" type="button" name="submit">Upload</button>
+        </div>
+
+        <div class="category" id="photography">
+            <i class="fas fa-camera"></i>
+            <p class="content-title">Photography</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl. 
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu. 
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit. 
+            </p>
+            <br>
+            <button class="upload-btn" type="button" name="submit">Upload</button>
+        </div>
+    </div>
+
+    <!--upload content modal-->
+    <div id="upload-content-frame">
+        <div id="frame-contents">
+            <!--close button-->
+            <span id="close">X</span>
+
+            <!--select content file from disc-->
+            <form id="file-upload">
+                <!--<label for="new-content">File Upload:</label>-->
+                <input type="file" id="content" name="new-content" multiple><br>
+            </form>
+
+            <!--content description-->
+            <input id="content-desc" type="text" placeholder="Provide content description">
+
+            <!--submit uploaded file-->
+            <input id="submit" type="submit">
+        </div>
+    </div>
+
+    <script src="js/upload.js" type="text/javascript"></script>
+</body>
+</html>
